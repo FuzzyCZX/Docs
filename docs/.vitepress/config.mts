@@ -26,7 +26,7 @@ export default defineConfig({
       { icon: 'github', link: 'https://github.com/FuzzyCZX/Docs' }
     ],
     lastUpdated: {
-      text: '更新于:',
+      text: '更新时间',
       formatOptions: {
         dateStyle: 'short',
         timeStyle: 'short'
