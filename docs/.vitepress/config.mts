@@ -2,28 +2,36 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  title: "Fuzzy work station",
+  description: "学海无涯~",
   base: "/Docs/",
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'LLM', link: '/llm/roadmap' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: 'LLM实践',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          // { text: 'roadmap', link: '/llm/roadmap' },
+          { text: '部署本地私有LLM服务', link: '/llm/build_local_llm_service' },
         ]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
+      { icon: 'github', link: 'https://github.com/FuzzyCZX/Docs' }
+    ],
+    lastUpdated: {
+      text: '更新于:',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'short'
+      }
+    }
+  },
+  lastUpdated: true
 })
