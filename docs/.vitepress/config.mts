@@ -14,6 +14,12 @@ export default defineConfig({
 
     sidebar: [
       {
+        text: 'deepseek-R1',
+        items: [
+          { text: 'R1技术报告解析', link: '/llm/deepseek-R1' },
+        ]
+      },
+      {
         text: 'LLM实践',
         items: [
           // { text: 'roadmap', link: '/llm/roadmap' },
